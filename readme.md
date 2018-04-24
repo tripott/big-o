@@ -171,7 +171,7 @@ mergeSort([2, 5, 3, 1, 4, 6, 9, 8])
 
 > Divide each of the resulting sublists into sublists half the size.
 
-```js
+```
 left [ 2, 5, 3, 1 ] right [ 4, 6, 9, 8 ]
 left [ 2, 5 ] right [ 3, 1 ]
 left [ 2 ] right [ 5 ]
@@ -185,10 +185,14 @@ left [ 9 ] right [ 8 ]
 
 > Stitch each item into a larger sorted list.
 
-```js
-;[2, 5][(1, 3)][(1, 2, 3, 5)][(4, 6)][(8, 9)][(4, 6, 8, 9)][
-  (1, 2, 3, 4, 5, 6, 8, 9)
-]
+```
+[ 2, 5 ]
+[ 1, 3 ]
+[ 1, 2, 3, 5 ]
+[ 4, 6 ]
+[ 8, 9 ]
+[ 4, 6, 8, 9 ]
+[ 1, 2, 3, 4, 5, 6, 8, 9 ]
 ```
 
 **mergeSort Example**
